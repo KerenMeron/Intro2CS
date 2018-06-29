@@ -1,0 +1,37 @@
+keren.meron
+200039626
+Keren Meron
+
+Consultations were made with:
+Eldan Chodorov
+cs user: eldan
+
+Websites used:
+http://www.tutorialspoint.com/python
+http://stackoverflow.com
+http://docs.python.org/3
+
+============================================
+=  README for ex11: 2nd Order Programming  =
+============================================
+
+===============================
+=   List of submitted files:  =
+===============================
+README      this file
+ex11.py     contains all code
+
+==================
+=  Description:  =
+==================
+
+In this exercise we implemented 2nd order programming. The main mind
+switch we made for this project was viewing functions as objects. We did
+this by programming functions which returned and also accepted as parameters,
+other functions.
+
+The project includes mathematical functions which calculate trig values,
+integrals, derivatives, etc. Some of the functions required a mathematical
+understanding, and partial use of proofs from calculus. We also graphed
+several functions, with great use of several functions composition.
+

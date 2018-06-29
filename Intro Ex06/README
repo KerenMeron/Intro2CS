@@ -1,0 +1,28 @@
+keren.meron
+200039626
+Keren Meron
+
+No consultations with other students were made.
+Websites used:
+http://www.tutorialspoint.com/python
+http://stackoverflow.com
+http://docs.python.org/3
+
+===================================
+=  README for ex6: PhotoMosaic  =
+===================================
+
+==================
+=  Description:  =
+==================
+
+This project takes an images and replaces segments of it with other pictures.
+The replacement is done so that the small pictures have similar pixels to the
+segments they replace. This calculation is done by comparing the RGB values
+of the pictures in the reservoir, to those in the original image.
+
+For more information about the photomosaic:
+https://en.wikipedia.org/wiki/Photographic_mosaic
+
+This assignment demonstrates understanding of running time and correct
+algorithm use.

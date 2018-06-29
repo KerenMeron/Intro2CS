@@ -1,0 +1,36 @@
+eldan
+201335965
+Eldan Chodorov
+
+keren.meron
+200039626
+Keren Meron
+
+No consultations with other students were made.
+Websites used:
+http://www.tutorialspoint.com/python
+http://stackoverflow.com
+http://docs.python.org/3
+
+===============================================
+=  README for ex5: Shopping Carts Comparison  =
+===============================================
+
+==================
+=  Description:  =
+==================
+
+This exercise deals with data bases, dictionaries and XML files.
+
+A program designed to compare item prices from different stores.
+The user can load XML files (supplied by the store) containing a data
+structure of items and their properties from a chosen store.
+The user can load several lists into the the program, and select different
+items which s/he is interested in comparing.
+The program will find the cheapest store for the user to shop at, by
+calculating the sum of the prices of all chosen items. If a store does not
+have a certain item, it will receive a fine to add to the prices sum. The
+fine will be 125% of the most expensive price of the item out of all stores.
+Other features include the option to save the formed shopping cart, and
+reload a cart previously saved.
+

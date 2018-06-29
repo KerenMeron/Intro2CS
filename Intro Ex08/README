@@ -1,0 +1,46 @@
+keren.meron
+200039626
+Keren Meron
+
+I discussed this exercise with:
+Eytan Ackerman, Eytan321
+
+Websites used:
+http://www.tutorialspoint.com/python
+http://stackoverflow.com
+http://docs.python.org/3
+
+=============================
+=  README for ex8: OOP  =
+=============================
+
+==================
+=  Description:  =
+==================
+
+In this exercise we made first use of OOP in python programming, by writing
+code for a game of battleships.
+
+The game structure:
+In each turn the user places a bomb on the board, and each ship moves one
+space in its direction. Each bomb has 3 lives on the board, and if all cells
+of a ship hit bombs, the ship is terminated. Game over when all ships are
+terminated.
+
+Code:
+We made use of classes in this exercises:
+1. Direction - a static class, for defining the direction constants which
+    will be used in ship and game classes.
+2. Ship - with attributes such as position, direction, length, etc. Implements
+    several functions which change the ship's state and position, and checks
+    different elements such as the cells' state.
+3. Game - implements game procedure, such as moving ships and placing bombs
+    on the board. With attributes such as the ships in the game and a
+    dictionary of bombs on the board.
+
+===============================
+=   List of submitted files:  =
+===============================
+README      this file
+ship.py     contains classes Ship, Direction
+game.py     contains class Game

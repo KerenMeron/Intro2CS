@@ -1,0 +1,52 @@
+eldan
+201335965
+Eldan Chodorov
+
+keren.meron
+200039626
+Keren Meron
+
+Consultations were made with:
+Daniel Novikov:    danielnov90
+Tom Nissim:        tomn96
+
+Websites used:
+http://stackoverflow.com
+http://docs.python.org/3
+http://effbot.org/tkinterbook/
+
+===========================================
+=  README for ex12: Connectivity and GUI  =
+===========================================
+
+===============================
+=   List of submitted files:  =
+===============================
+README                  this file
+AUTHORS                 users of project writers
+client.py               main file, creates gui and runs connection class
+client_connection.py    forms connections with server
+constants.py            contains all constants used in project
+line.gif                image for gui
+oval.gif                image for gui
+triangle.gif            image for gui
+rectangle.gif           image for gui
+
+==================
+=  Description:  =
+==================
+
+In this exercise we were required to create a graphic user interface, and
+also practice connecting to a server.
+We created an interface on which a user can draw shapes on in different
+colors. Each user joins a group, in which the drawing canvas displays shapes
+drawn by all users in group.
+
+We had our first (and hopefully not last) encounter with tkinter, and learned
+different syntax ways to design and create an interface. In addition we
+managed to form a connection with a server.
+
+All this was done using object oriented programming; we had a class for the
+interface and a class for the client which was in charge of connectivity.
+We had to plan this project thoroughly and use our creative skills in
+designing the interface.

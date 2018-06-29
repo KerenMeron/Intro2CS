@@ -1,0 +1,97 @@
+keren.meron
+200039626
+Keren Meron
+
+==================================
+=  README for ex2: Conditions  =
+==================================
+
+
+usage:	python3 convert_spoon_to_cup.py
+		python3 calculate_mathematical_expression.py
+		python3 largest_and_smallest.py
+		python3 quadratic_equation.py
+		python3 shapes.py
+		python3 bmi.py
+
+==================
+=  Description:  =
+==================
+
+CONVERT_SPOON_TO_CUP
+Using a unit conversion, accepts a measurement in spoons
+and converts it to cups.
+
+CALCULATE_MATHEMATICAL_EXPRESSION
+Contains two functions:
+1. Accepts two numbers and a math operations, and solves
+	the given mathematical expression.
+2. Accepts a string containing a mathematical expression.
+	Extracts the numbers and operation in the expression,
+	and uses the first function to calculate the expression.
+
+LARGEST_AND_SMALLEST
+Accepts 3 numbers, and using a for loop,
+finds the minimal and maximal values.
+
+QUADRATIC_EQUATION
+Contains two functions:
+1. Accepts three numbers which are the coefficients of a quadratic equation.
+	Decides how many solutions exist to the	equation,
+	and then uses the quadratic formula to find those.
+2. Accepts from the user three numbers. Uses the first function
+ 	to calculate the solutions of the quadratic equations which
+ 	has those numbers as coefficients.
+
+SHAPES
+Contains 4 functions:
+1. Calculates the area of a circle from a given radius.
+2. Calculates the area of a rectangle from two given sides.
+3. Calculates the area of a trapezoid from two given bases
+ 	and a given height.
+4. Asks the user to pick a shape out of the three mentioned
+ 	above, and then calls upon the relevant function to
+	calculate the shape's area. To do so, the user must
+	input the relevant lengths of the chosen shape.
+
+BMI
+Accepts two parameters, and calculates a 'bmi' value according
+to a certain formula. Then checks if the 'bmi' is between certain
+limits, according to which returns True or False.
+
+=============================
+=  List of submitted files: =
+=============================
+
+README									This file.
+convert_spoon_to_cup.py 				Converts units of spoons to cups.
+calculate_mathematical_expression.py	Calculates math expressions.
+largest_and_smallest.py					Finds maximal and minimal values.
+quadratic_equation.py					Solves a quadratic equation.
+shapes.py								Finds the areas of shapes.
+bmi.py									Calculates and BMI.
+
+======================
+=  Special Comments  =
+======================
+
+For the BODEK:
+When I sometimes called another function with parameters,
+I used the same variable names inside the function
+and when calling the function.
+
+For example, if I defined a function;
+	def function (var1, var2):
+And then called on it like so:
+	function (var1, var2)
+Instead of:
+	function (var3, var4)
+
+
+I wanted to point out that I am aware that these DO NOT have
+to be similar in order to call, but I decided to do so
+nonetheless (coding style).
+I hope my meaning was understood, just wanted to make sure
+points weren't taken off for this.
+
+

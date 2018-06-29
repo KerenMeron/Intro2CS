@@ -1,0 +1,28 @@
+keren.meron
+200039626
+Keren Meron
+
+I discussed this exercise with:
+Nir Sweed, Sweedy12.
+
+Websites used:
+http://www.tutorialspoint.com/python
+http://stackoverflow.com
+http://docs.python.org/3
+
+===================================
+=  README for ex7: Recursions  =
+===================================
+
+==================
+=  Description:  =
+==================
+
+This exercise includes implementation of several linear as well as nonlinear
+recursive functions. For each implementation we had to understand two
+important elements of the algorithm: the base case, and the recursive call.
+
+Some of the functions implemented:
+- A solution of the tower of hanoi.
+- Calculation of an exponent.
+- Finding all possible sequence combinations of characters.

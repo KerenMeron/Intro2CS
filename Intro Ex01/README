@@ -1,0 +1,42 @@
+keren.meron
+200039626
+Keren Meron
+
+==================================
+=  README for ex1: Hello Turtle  =
+==================================
+
+
+usage: python3 hello_turtle.py <flowers>
+		python3 math_print.py <math_operations>
+
+==================
+=  Description:  =
+==================
+
+HELLO_TURTLE
+Draws three flowers using the turtle module.
+Makes use of four functions:
+1. Draws a single petal
+2. Draws a single flower
+3. Moves cursor in order to draw an additional single flower
+4. draws three flowers
+Each functions uses the previous ones.
+
+MATH_PRINT
+Preforms a number of simple math operations, using the math module.
+
+=============================
+=  List of submitted files: =
+=============================
+
+README		This file
+hello_turtle.py    	Contains all turtle functions. Draws three flowers.
+math_print.py		Preforms several math operations.
+
+======================
+=  Special Comments  =
+======================
+
+Python3 has improved Unicode support and language aspects, for example the print command. Python2 on the other hand has better library support. Lastly, the two differ in some of the packages that can be accessed.
+

@@ -1,0 +1,28 @@
+keren.meron
+200039626
+Keren Meron
+
+I hadn't consulted with anyone.
+I consulted with the following websites:
+
+http://www.tutorialspoint.com/python
+http://stackoverflow.com
+https://docs.python.org/3/
+
+=============================
+=  README for ex4: Hangman  =
+=============================
+
+==================
+=  Description:  =
+==================
+
+A game of hangman. The game randomly chooses a word to guess.
+Player guesses letters in order to reveal the hidden word.
+Player has a maximum number of guesses until gameover, at which point
+s/he can choose to play again. Player can ask for a hint in form of a letter
+that may be in the word.
+
+
+
+

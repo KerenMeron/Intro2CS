@@ -1,0 +1,129 @@
+eldan
+201335965
+Eldan Chodorov
+
+keren.meron
+200039626
+Keren Meron
+
+Consultations were made with:
+Daniel Novikov:    danielnov90
+Tom Nissim:        tomn96
+
+Websites used:
+http://www.tutorialspoint.com/python
+http://stackoverflow.com
+http://docs.python.org/3
+
+=================================
+=  README for ex9: Asteroids  =
+=================================
+
+===============================
+=   List of submitted files:  =
+===============================
+README              this file
+AUTHORS             users of project writers
+asteroids_main      contains GameRunner class and game execution
+ship                contains Ship class
+asteroid            contains Asteroid class
+torpedo             contains Torpedo class
+constants           contains all constant values for project
+
+
+==================
+=  Description:  =
+==================
+
+In this exercise we created a game of 'Asteroids'.
+
+Game structure:
+The user has a ship with 3 lives, and can fire torpedos.
+There are also asteroids floating around in the game.
+If a torpedo hits an asteroid, the asteroid will be split into two smaller
+asteroids, or destroyed, if the asteroid has reached its smallest size.
+If an asteroid hits the ship, the ship will lose a life.
+The objection is to destroy all asteroids before they destroy the ship.
+
+The exercise makes use of Object Oriented Programming. We created different
+classes for implementation:
+Torpedo, Ship, Asteroid, GameRunner and Screen(supplied for us).
+
+Prior to writing the code, we planned out each classes' attributes and
+functions, in order to maximize efficiency.
+
+=======================
+=  Special Comments:  =
+=======================
+
+Considerations we had while designing the game:
+
+1. Magic numbers
+We debated whether to place constants each in relevant file, and either inside
+class or outside class. Eventually we decided to place all constant values in
+a separate file 'constants', which we imported to all other files.
+Our initial purpose for placing these values each in the file which uses them
+was for readability and ease of use. We did not want to have a prefix for
+calling each value from outside, and wanted to easily know which value
+belonged to which class.
+Finally we decided to make use of a separate file because we realized we could
+easily import all elements from the file and therefor not have a prefix while
+calling them. Additionally, we could maintain order by arranging the constants
+in the file with titles. Most importantly, we realized we had a really large
+number of constants in the whole project, so this would be the clearest and
+most organized way to work.
+
+2. Asteroids creation
+There are two cases in which asteroids are created; randomly, at the game
+beginning, and in inheritance, when an asteroid is hit and split.
+Our Asteroid initializer received specific parameters and created an
+instance accordingly, so our natural course of action was to calculate and
+define the parameters for when asteroids are created from a split, and only
+then call the Asteroid constructor with those parameters. This seemed like a
+legitimate way to work, since it leaves the constructor clean and easy to
+understand and follow.
+We changed our decision and recoded the initializer so that it accept a
+boolean parameter which would indicate on which case the asteroid is being
+created, and accordingly use relevant parameters. Meaning the calculations
+were made in the class constructor itself. This method arose from the
+realization that we could easily divide the constructor in a way that
+maintained our desired layout, and kept the main code coherent and concise,
+which wouldn't have been the case had we stuck with our original plan.
+
+3. Function location
+There were several helper functions which we wrote, for example checking if
+there had been a collision with an asteroid, creating new asteroids, moving
+objects and others.
+The alternative to our current code was writing all helper functions in the
+GameRunner class, since that is where they would have been called from. Since
+the game process was handled from GameRunner, it made sense to execute all
+game procedures from that class as well.
+Finally we compromised on assigning some of the functions to the Ship,
+Asteroid and Torpedo classes. Our reasoning was that the functions effect
+was on the matched class object. So it was much more organized after we
+allocated the functions to different classes. Some functions did remain in
+GameRunner, mostly as long as they applied to several of the objects, or
+had direct effect on one of the attributes in the GameRunner class. We felt
+that we found a well balanced solution for the functions' allocations.
+
+====================
+ = Note to grader: =
+====================
+1. Taking into consideration the high do_loop frequency, we took extra
+precaution measures, for example with conditions in loops and making
+additional checks, this in case a command is carried out before previous
+commands have finished execution.
+
+2. For the special case in which the ship and a torpedo hit an asteroid at
+the same time, we decided that the torpedo will kill the asteroid (and the
+ship will not lose a life).
+
+3. If a torpedo hits several asteroids at the exact same position, it will
+affect all of the asteroids (which are at specific location). For example if
+a torpedo hits two asteroids, they will both be split up.
+
+4. We also checked the case in which two torpedos arrive at a point at the
+exact same time, and in that case they will each have their own affect. So
+if they arrive at two asteroids together, one of the torpedos will hit the
+smaller asteroid which was created from the original asteroid's hit with the
+first torpedo.

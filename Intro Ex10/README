@@ -1,0 +1,80 @@
+keren.meron
+200039626
+Keren Meron
+
+Consultations were made with:
+Eldan Chodorov
+cs user: eldan
+
+Websites used:
+http://www.tutorialspoint.com/python
+http://stackoverflow.com
+http://docs.python.org/3
+
+==================================
+=  README for ex10: WikiNetwork  =
+==================================
+
+===============================
+=   List of submitted files:  =
+===============================
+README      this file
+ex10.py     contains all code
+
+==================
+=  Description:  =
+==================
+
+In this exercise we built a data base of articles existing in a wikipedia
+network. Each article had a name and pointed to another article, defined as
+its neighbor. All articles which have webpage references from a certain
+article's page, are called its neighbors.
+
+The project includes two classes, one of the Article and the other of
+WikiNetwork. Article represents an article page and has attributes such as
+its name, neighbors, etc. The WikiNetwork can receive a list of article pairs,
+and thus graphs out the connections between all articles.
+
+Some of the main functions which we were required to implement ran checks
+on the wikinetwork, for instance checking possible paths from one article
+onwards, their ranks in terms of use, etc.
+
+In this exercise we made use of generators and iterators, as well as
+mapping and algorithms techniques.
+
+=======================
+=  Special Comments:  =
+=======================
+
+Answers to questions:
+
+The 3 highest ranks in the WikiNetwork created for links.txt:
+1. United_States
+2. France
+3. Europe
+
+The highest Jackard index for each of the following:
+United_Kingdom: Scotland
+Israel: Yemen
+United_States: Driving_on_the_left_or_right
+Algebra: Calculus
+World_War_II: Adolf_Hitler
+
+Questions:
+1. Percentage of articles which are distance 1 from 'Christopher_Columbus'?
+0.9168303863785201 %
+2. Percentage of articles which are distance 2 from 'DNA'?
+13.7524557956778 %
+3. Percentage of articles which are distance 3 from 'History'?
+61.667758131412356 %
+
+
+====================
+ = Note to grader: =
+====================
+
+Although I did use recursion for the last function, I just wanted to clarify
+that I understand that my way is less efficient in terms of run time (than
+implementing with the clue given). I did so anyways because when I tested it,
+the run time was just as short, and so I stuck with it.
+

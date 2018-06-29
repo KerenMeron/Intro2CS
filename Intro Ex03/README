@@ -1,0 +1,26 @@
+keren.meron
+200039626
+Keren Meron
+
+
+=============================
+=  README for ex3: Loops  =
+=============================
+
+usage: python3 ex3.py <>
+
+==================
+=  Description:  =
+==================
+
+Several functions which use loops to evaluate parameters, for example
+evaluating and comparing lists.
+
+=============================
+=  List of submitted files: =
+=============================
+
+README		This file.
+ex3.py    	Contains all required functions.
+
+
